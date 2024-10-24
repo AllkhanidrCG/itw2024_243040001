@@ -1,0 +1,40 @@
+body {
+    background-color: aqua;
+}
+h4 {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+h1 {
+    font-family: 'Comic Sans Ms';
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#cimen {
+    color: white;
+}
+#cimen:hover {
+    color:brown
+}
+#ket {
+    text-align: center;
+    color:orange;
+}
+p {
+    text-align: center;
+}
+#mark:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+#mark{
+    text-decoration: none;
+}
