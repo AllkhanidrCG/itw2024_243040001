@@ -1,11 +1,14 @@
 body {
-    background-image: url(fb.png);}
+    background-image: url(fb.png);
+    background-repeat: repeat-x;
+}
 h4 {
     text-align: center;
     font-style: italic;
     font-weight: bold;
     
 }
+
 h1 {
     font-family: 'Comic Sans Ms';
     font-size: 60px;
@@ -20,7 +23,7 @@ p {
     color: red;
 }
 #cimen:hover {
-    color:brown
+    color:brown;
 }
 #ket {
     text-align: center;
