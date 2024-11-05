@@ -1,0 +1,44 @@
+body{
+    background-color: aqua;
+    font-family: Georgia;
+}
+h1{
+    font-family: Comic Sans MS;
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+h4{
+    text-align: right;
+}
+p{
+    text-align: center;
+}
+.p2{
+    text-align: center;
+    
+}
+.p1{
+    color:orange;
+    text-align: center;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.mark {
+    color:blue;
+    text-decoration: underline;
+}
+
+.mark:hover {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+    text-decoration: none;
+}
