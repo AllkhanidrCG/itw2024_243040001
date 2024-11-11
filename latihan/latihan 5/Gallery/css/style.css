@@ -119,6 +119,18 @@ h1 {
     animation: slidedownfade .5s .5s forwards;
 }
 
+/* navigasi */
+.next { 
+    width: 221px;
+    height: 361px;
+    background-image: url(../img/kanan2.png);
+    position: absolute;
+    text-indent: -9999px;
+}
+
+
+
+
 /* animasi */
 @keyframes zoomdanfade {
     0% {
