@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -317,3 +318,324 @@ input{
     }
 }
 
+=======
+
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+
+/* Style */
+body {
+    font: 10px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    background-image: url(Gallery/img/sativa.jpg);
+    color: #333333;
+}
+
+.container {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+
+}
+
+.header {
+    padding: 02x;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo{
+    float: left;
+    width: 40px;
+}
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: salmon;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hero1 {
+    height: 280px;
+    background-image: url(Gallery/img/fototoko.jpg) ;
+    background-size: cover;
+    background-position: 0 -20px;
+    border-top: 5px solid lightskyblue;
+    border-bottom: 5px solid salmon;
+}
+
+.hero2  {
+    height: 280px;
+    background-image: url(Gallery/img/fotoecom.jpg) ;
+    background-size: cover;
+    background-position: 0 -350px;
+    border-top: 5px solid lightskyblue;
+    border-bottom: 5px solid salmon;
+}
+
+.content {
+    padding:20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content .penulis{
+    font-size: 11px;
+    margin-top: -5px;
+} 
+
+.content .penulis a {
+    color:salmon;
+    text-decoration: none;
+}
+.content p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #333;
+    padding: 20px;
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+.y {
+    color: red;
+}
+
+.judul {
+    color: blue;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 30px;
+    
+    
+
+}
+li {
+    font-size: 15px;
+}
+/* font */
+@font-face{
+    font-family: 'BebasNeue';
+    src: url(Gallery/font/BebasNeue.woff) format('woff');
+}
+
+/* Style Utama */
+
+body {
+    font: 18px/36px 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+    background-color: #ddd;
+}
+
+.tulisan {
+    font-size: 80px;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
+}
+
+.container2 {
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
+    border-radius: 5px;
+    
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 5px solid #666;
+    float: left;
+    margin-right: 20px;
+    position:relative ;
+}
+
+.gallery li,
+.gallery li img,
+.gallery l1 span { 
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200,200,200,.5);
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    line-height: 120px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transition: .3s;
+    transform: scale(0) rotate(0);
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear {
+    clear: both;
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img {
+    animation: zoomdanfade 1s;
+    border-radius: 0;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slidedownfade .5s .5s forwards;
+}
+
+/* navigasi */
+.next { 
+    width: 221px;
+    height: 361px;
+    background-image: url(../img/kanan2.png);
+    position: absolute;
+    text-indent: -9999px;
+}
+
+input{
+    margin : 22px;
+    height: 30px;
+    width: 100px;
+}
+
+
+
+/* animasi */
+@keyframes zoomdanfade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }    
+}
+
+@keyframes slidedownfade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+>>>>>>> c58a138ffa8edb9bcfd4fa3dba9881f17303ed79
