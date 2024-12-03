@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -108,4 +109,116 @@ nav ul li a:hover {
     .menu {
         display: flex;
     }
+=======
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat" , sans-serif;
+    overflow: hidden;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: bisque;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: blue;
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: "Merriweather", serif;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: aqua;
+    text-decoration: none;
+    font-size: 0.8cm;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* menu */
+
+.menu {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.8s;
+}
+
+/* animasi */
+.menu span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu input:checked span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu input:checked span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.mewhitnu input:checked span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* responsive */
+
+/*ukuran tablet*/
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+/* ukuran mobile */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: flex;
+    }
+>>>>>>> db72a53a493929036385cdb0b82554f21750c707
 } 
