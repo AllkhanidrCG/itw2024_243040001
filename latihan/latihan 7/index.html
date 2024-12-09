@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGYD KOMPUTER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header" id="home">
+            <div class="hero">
+                <h2 class="heading">Egyd</h2>
+                <p class="sub-heading">Computer</p>
+            </div>
+            <div class="features feature-1" id="product">
+                <h4 class="price">IDR 15.000K</h4>
+                <p class="item">ASUS ROG</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">IDR 6.000K</h4>
+                <p class="item">LENOVO IDEALPAD</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1 class="judul">EG<span class="y">Y</span>D COMPUTER</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#service">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services" id="service">
+            <div class="service">
+                <div class="icon"></div>
+                <h3>Egyd Computer</h3>
+                <p>
+                    Egyd Computer adalah Perusahaan yang menjual alat alat digital dan aksesoris nya
+                </p>
+            </div>
+            <div class="service">
+                    <div class="icon"></div>
+                    <h3>Kualitas</h3>
+                    <p>
+                        Kualitas alat alat digital di toko Egyd Computer tidak usah diragukan lagi karna disini kita menjual produk baru dan second berkualitas
+                    </p>
+             </div>
+             <div class="service">
+                    <div class="icon"></div>
+                    <h3>Garansi</h3>
+                    <p>
+                        Garansi 1 Tahun
+                    </p>
+            </div>
+            <div class="service">
+                <div class="icon"></div>
+                <h3>Lokasi</h3>
+                <p>
+                    Anda bisa mengunjungi Egyd Computer di Jl. Moh. Toha No.11, Kasturi, Kec. Kramatmulya, Kabupaten Kuningan, Jawa Barat 45521
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2>Gallery</h2>
+            <img src="lenovo.jpg" alt="">
+            <img src="rog.jpg" alt="">
+            <img src="tuf.jpg" alt="">
+        </section>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+const nav =document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
+}); 
+    </script>
+</body>
+</html>
