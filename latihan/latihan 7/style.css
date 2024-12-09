@@ -64,7 +64,7 @@ body {
 }
 .feature-2 {
     grid-area: feature-2;
-    background-image: url(lenovo\ ideapad.jpg);
+    background-image: url(lenovo.jpg);
     background-size: cover;
 }
 
